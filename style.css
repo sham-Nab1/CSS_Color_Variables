@@ -1,0 +1,103 @@
+:root {
+    --primary: #1DA1F2;
+    --secondary: #657786;
+    --background: #FFFFFF;
+    --success: #17BF63;
+    --warning: #FFAD1F;
+    --error: #E0245E;
+    --info: #0069B2;
+    --text-primary: #14171A;
+    --text-secondary: #657786;
+    --text-white: #FFFFFF;
+    --card-background: #F5F8FA;
+    --border: #E1E8ED;
+    --hover: #E8F5FE;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px; 
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px; 
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.box-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.box {
+    width: 150px;
+    height: 200px;
+    background-color: var(--box-bg-color, var(--card-background)); 
+    color: var(--text-color, var(--text-primary)); 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--border);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-label {
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.box:hover {
+    transform: scale(1.05);
+    background-color: var(--hover);
+}
+
+.primary .box-label {
+    color: var(--primary);
+}
+
+.secondary .box-label {
+    color: var(--secondary);
+}
+
+.background .box-label {
+    color: var(--text-primary);
+}
+
+.success .box-label {
+    color: var(--success);
+}
+
+.warning .box-label {
+    color: var(--warning);
+}
+
+.error .box-label {
+    color: var(--error);
+}
+
+.info .box-label {
+    color: var(--info);
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Color Variables In CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1> Color Variables In CSS </h1>
+    <div class="container">
+        <div class="box-wrapper primary">
+            <div class="box" style="--box-bg-color: var(--primary);">
+            </div>
+            <span class="box-label">Primary #1DA1F2</span>
+        </div>
+
+        <div class="box-wrapper secondary">
+            <div class="box" style="--box-bg-color: var(--secondary);">
+            </div>
+            <span class="box-label">Secondary #657786</span>
+        </div>
+
+        <div class="box-wrapper background">
+            <div class="box" style="--box-bg-color: var(--background);">
+            </div>
+            <span class="box-label">Background #FFFFFF</span>
+        </div>
+
+        <div class="box-wrapper success">
+            <div class="box" style="--box-bg-color: var(--success);">
+            </div>
+            <span class="box-label">Success #17BF63</span>
+        </div>
+
+        <div class="box-wrapper warning">
+            <div class="box" style="--box-bg-color: var(--warning);">
+            </div>
+            <span class="box-label">Warning #FFAD1F</span>
+        </div>
+
+        <div class="box-wrapper error">
+            <div class="box" style="--box-bg-color: var(--error);">
+            </div>
+            <span class="box-label">Error #E0245E</span>
+        </div>
+
+        <div class="box-wrapper info">
+            <div class="box" style="--box-bg-color: var(--info);">
+            </div>
+            <span class="box-label">Info #0069B2</span>
+        </div>
+    </div>
+
+</body>
+</html>
